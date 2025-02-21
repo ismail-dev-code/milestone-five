@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      li {
+        color: green;
+      }
+      #fruits-title {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hello welcome to dom</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero unde
+        natus hic neque error, expedita aut? Velit repellat hic vitae commodi
+        cupiditate, est autem eveniet quas quia, aliquam iure.
+      </p>
+    </header>
+    <main>
+      <section>
+        <h1>My awesome dom de re da</h1>
+        <ul>
+          <li>Jalali set</li>
+          <li>Abuler dom</li>
+          <li>Hayre dom</li>
+          <li>dom re dada</li>
+        </ul>
+      </section>
+      <section>
+        <h1 id="fruits-title">Fruits</h1>
+        <ul>
+          <li class="foler-bo">apple</li>
+          <li class="foler-bo">banana</li>
+          <li class="foler-bo">carrot</li>
+        </ul>
+      </section>
+      <section id="place-title">
+        <h1>Places you can visit</h1>
+        <ul>
+          <li>sylhet jamu</li>
+          <li>barishal jamu</li>
+          <li>ar koi jaitam</li>
+          <li>ai noakhali thaki re</li>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
+    <script>
+      const liCollection = document.getElementsByTagName("li");
+      //   for(const li of liCollection){
+      //     console.log(li.innerText);
+      //   }
+      const allHeadings = document.getElementsByTagName("h1");
+      //   for(const heading of allHeadings){
+      //     console.log(heading.innerText);
+      //   }
+
+      const getFruitsTitle = (document.getElementById(
+        "fruits-title"
+      ).style.backgroundColor = "gray");
+
+      const getFruitsTitle1 = document.getElementById('fruits-title' backgroundColor = 'green')
+
+      getFruitsTitle.innerText = "changed by js";
+      const fruitsLi = document.getElementsByClassName("foler-bo");
+      for (const fruit of fruitsLi) {
+      }
+      const places = document.querySelector("#place-title li");
+      console.log(places.innerText);
+
+      const places1 = document.querySelectorAll("#place-title li");
+      console.log(places1);
+    </script>
+  </body>
+</html>
