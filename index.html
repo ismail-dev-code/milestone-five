@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Events</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Dom Doma Dom de re</h1>
+      <!-- option one for event handler  -->
+      <button onclick="console.log(5);">first button</button>
+      <button onclick="console.log('you clicked re baba');">
+        second button
+      </button>
+      <button onclick="console.log('50');">third button</button>
+      <input onclick="console.log('email nai re dada');" type="text" />
+      <br />
+      <!-- option two for click event handler  -->
+      <button onclick="makeYellow()">make yellow</button>
+      <button onclick="makeGreen()">Make Green</button>
+      <br />
+      <button id="btn-make-blue">Make Blue</button>
+      <button id="btn-make-purple">Make purple</button>
+    </main>
+    <footer></footer>
+    <script>
+      const btnMakePurple = document.getElementById("btn-make-purple");
+      btnMakePurple.onclick = makePurple;
+      function makePurple() {
+        document.body.style.backgroundColor = "purple";
+      }
+    </script>
+    <script src="js/events.js"></script>
+  </body>
+</html>
