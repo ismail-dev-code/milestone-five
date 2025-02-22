@@ -16,24 +16,25 @@
   </head>
   <body>
     <header>
-      <h1>Hello welcome to dom</h1>
+      <h1>Hello This is DOM</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero unde
-        natus hic neque error, expedita aut? Velit repellat hic vitae commodi
-        cupiditate, est autem eveniet quas quia, aliquam iure.
+        amet consectetur adipisicing elit. Quia, deserunt!consectetur
+        adipisicing elit. Ut libero unde natus hic neque error, expedita aut?
+        Velit repellat hic vitae commodi cupiditate, est autem eveniet quas
+        quia, aliquam iure.
       </p>
     </header>
     <main>
-      <section>
-        <h1>My awesome dom de re da</h1>
+      <section id="dom-de">
+        <h1>My awesome dom de re shuru hoi gece</h1>
         <ul>
           <li>Jalali set</li>
           <li>Abuler dom</li>
           <li>Hayre dom</li>
-          <li>dom re dada</li>
+          <li>dom de re</li>
         </ul>
       </section>
-      <section>
+      <section id="fruits-container">
         <h1 id="fruits-title">Fruits</h1>
         <ul>
           <li class="foler-bo">apple</li>
@@ -42,8 +43,8 @@
         </ul>
       </section>
       <section id="place-title">
-        <h1>Places you can visit</h1>
-        <ul>
+        <h1 class="text-center">Places you can visit</h1>
+        <ul id="places-list">
           <li>sylhet jamu</li>
           <li>barishal jamu</li>
           <li>ar koi jaitam</li>
@@ -53,6 +54,7 @@
     </main>
     <footer></footer>
     <script src="js/script.js"></script>
+    <script src="append.js"></script>
     <script>
       const liCollection = document.getElementsByTagName("li");
       //   for(const li of liCollection){
@@ -67,7 +69,9 @@
         "fruits-title"
       ).style.backgroundColor = "gray");
 
-      const getFruitsTitle1 = document.getElementById('fruits-title' backgroundColor = 'green')
+      const getFruitsTitle1 = (document.getElementById(
+        "fruits-title"
+      ).style.backgroundColor = "green");
 
       getFruitsTitle.innerText = "changed by js";
       const fruitsLi = document.getElementsByClassName("foler-bo");
@@ -77,7 +81,10 @@
       console.log(places.innerText);
 
       const places1 = document.querySelectorAll("#place-title li");
-      console.log(places1);
+      // console.log(places1);
+      const domDe = document.getElementById('dom-de');
+      domDe.getAttribute('id')
+      console.log();
     </script>
   </body>
 </html>
