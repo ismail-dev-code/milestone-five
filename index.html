@@ -8,7 +8,7 @@
   <body>
     <header></header>
     <main>
-      <h1>Dom Doma Dom de re</h1>
+      <h1 id="doma-dom">Dom Doma Dom de re</h1>
       <!-- option one for event handler  -->
       <button onclick="console.log(5);">first button</button>
       <button onclick="console.log('you clicked re baba');">
@@ -21,16 +21,25 @@
       <button onclick="makeYellow()">make yellow</button>
       <button onclick="makeGreen()">Make Green</button>
       <br />
+      <!-- option three get getElementById and the set onclick to a function  -->
       <button id="btn-make-blue">Make Blue</button>
       <button id="btn-make-purple">Make purple</button>
+      <br>
+       <!-- /option four : addEventListener -->
+      <button id="btn-make-red">Make Red</button>
+      <button id="btn-make-gold">Make Gold</button>
+      <br>
+      <button id="btn-make-gray">Click me to get gray background color</button>
     </main>
     <footer></footer>
     <script>
-      const btnMakePurple = document.getElementById("btn-make-purple");
-      btnMakePurple.onclick = makePurple;
-      function makePurple() {
-        document.body.style.backgroundColor = "purple";
-      }
+     document.getElementById('btn-make-gray').addEventListener('click', function makeBtnGray(){
+        document.body.style.backgroundColor='gray';
+     })
+
+     document.getElementById('doma-dom').addEventListener('click', function makeTextCenter (){
+        document.body.style.textAlign='center';
+     })
     </script>
     <script src="js/events.js"></script>
   </body>

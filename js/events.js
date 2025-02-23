@@ -12,3 +12,16 @@ const btnMakeBlue = document.getElementById("btn-make-blue");
 btnMakeBlue.onclick = function makeBlue() {
   document.body.style.backgroundColor = "blue";
 };
+// option four getElementById and set a onclick with a call function 
+const btnMakePurple = document.getElementById("btn-make-purple");
+btnMakePurple.onclick = makePurple;
+function makePurple() {
+  document.body.style.backgroundColor = "purple";
+}
+
+document.getElementById('btn-make-red').addEventListener('click', function btnMakeRed(){
+    document.body.style.backgroundColor = 'red';
+ })
+ document.getElementById('btn-make-gold').addEventListener('click', function (){
+    document.body.style.backgroundColor= 'goldenrod'
+ })
